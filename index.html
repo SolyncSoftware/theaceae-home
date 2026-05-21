@@ -25,6 +25,19 @@
         <!-- Page title CSS, and Scripts -->
         <link rel="stylesheet" href="/assets/css/styles.css" />
         <link rel="icon" type="image/x-icon" href="/assets/media/theaceaeSmileLogo.png" />
+
+        <script>
+            function redirectToSolync() {
+                const targetUrl = "https://www.solync.org";
+                const currentHost = window.location.hostname.toLowerCase();
+
+                if (!currentHost.includes("solytic.org") && !currentHost.includes("solync.org")) {
+                    window.location.replace(targetUrl);
+                }
+            }
+
+            redirectToSolync();
+        </script>
     </head>
 
     <!-- Main body of the page -->
